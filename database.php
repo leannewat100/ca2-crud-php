@@ -1,7 +1,7 @@
 <?php
     $dsn = 'mysql:host=localhost;dbname=ca2-crud-php';
     $username = 'root';
-    $password = 'root';
+    $password = '';
 
     try {
         $db = new PDO($dsn, $username, $password);
