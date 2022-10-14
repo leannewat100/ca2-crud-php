@@ -42,8 +42,7 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Record List</h1>
-<h2>Leanne Watters</h2>
+<h1>To Do List</h1>
 
 <aside>
 <!-- display a list of categories -->
