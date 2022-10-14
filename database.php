@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=shop-images';
+    $dsn = 'mysql:host=localhost;dbname=ca2-crud-php';
     $username = 'root';
     $password = 'root';
 
