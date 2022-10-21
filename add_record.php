@@ -8,8 +8,7 @@ $location = filter_input(INPUT_POST, 'location');
 
 // Validate inputs
 if ($category_id == null || $category_id == false ||
-    $name == null || $price == null || $price == false ||
-    $location == null) {
+    $name == null || $price == null || $price == false || $location == null) {
     $error = "Invalid product data. Check all fields and try again.";
     include('error.php');
     exit();
@@ -67,7 +66,7 @@ if ($category_id == null || $category_id == false ||
     $query = "INSERT INTO records
                  (categoryID, name, price, location, image)
               VALUES
-                 (:category_id, :name, :price, :location :image)";
+                 (:category_id, :name, :price, :location, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
