@@ -29,10 +29,18 @@ include('includes/header.php');
             <label>Name:</label>
             <input type="input" name="name">
             <br>
+            
+            <label>Desciption:</label>
+            <input type="input" name="description">
+            <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price">
-            <br>  
+            <label>Date:</label>
+            <input type="input" name="date">
+            <br>
+
+            <label>Need:</label>
+            <input type="input" name="need">
+            <br>
             
             <label>Location:</label>
             <input type="input" name="location">
