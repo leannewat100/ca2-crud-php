@@ -64,7 +64,7 @@ if ($category_id == null || $category_id == false || $name == null || $date == n
     require_once('database.php');
 
     // Add the product to the database 
-    $query = "INSERT INTO tasks
+    $query = "INSERT INTO records
                  (categoryID, name, description, date, need, location, image)
               VALUES
                  (:category_id, :name, :description, :date, :need, :location, :image)";
