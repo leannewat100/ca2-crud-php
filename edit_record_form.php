@@ -3,7 +3,7 @@ require('database.php');
 
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $query = 'SELECT *
-          FROM tasks
+          FROM records
           WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':record_id', $record_id);
@@ -16,7 +16,7 @@ $statement->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-        <h1>Edit Product</h1>
+        <h1>Edit Task</h1>
         <form action="edit_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
             <input type="hidden" name="original_image" value="<?php echo $records['image']; ?>" />
