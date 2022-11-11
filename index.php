@@ -29,10 +29,10 @@ $categories = $statement2->fetchAll();
 $statement2->closeCursor();
 
 // Get records for selected category
-$queryTasks = "SELECT * FROM tasks
+$queryRecords = "SELECT * FROM records
 WHERE categoryID = :category_id
-ORDER BY taskID";
-$statement3 = $db->prepare($queryTasks);
+ORDER BY recordID";
+$statement3 = $db->prepare($queryRecords);
 $statement3->bindValue(':category_id', $category_id);
 $statement3->execute();
 $records = $statement3->fetchAll();
@@ -73,34 +73,34 @@ include('includes/header.php');
 <th>Delete</th>
 <th>Edit</th>
 </tr>
-<?php foreach ($tasks as $task) : ?>
+<?php foreach ($records as $record) : ?>
 <tr>
-<td><img src="image_uploads/<?php echo $task['image']; ?>" width="100px" height="100px" /></td>
-<td><?php echo $task['name']; ?></td>
-<td><?php echo $task['description']; ?></td>
-<td><?php echo $task['date']; ?></td>
-<td><?php echo $task['need']; ?></td>
-<td><?php echo $task['location']; ?></td>
-<td><form action="delete_task.php" method="post"
-id="delete_task_form">
-<input type="hidden" name="task_id"
-value="<?php echo $task['taskID']; ?>">
+<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+<td><?php echo $record['name']; ?></td>
+<td><?php echo $record['description']; ?></td>
+<td><?php echo $record['date']; ?></td>
+<td><?php echo $record['need']; ?></td>
+<td><?php echo $record['location']; ?></td>
+<td><form action="delete_record.php" method="post"
+id="delete_record_form">
+<input type="hidden" name="record_id"
+value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
-value="<?php echo $task['categoryID']; ?>">
+value="<?php echo $record['categoryID']; ?>">
 <input type="submit" value="Delete">
 </form></td>
-<td><form action="edit_task_form.php" method="post"
-id="delete_task_form">
-<input type="hidden" name="task_id"
-value="<?php echo $task['taskID']; ?>">
+<td><form action="edit_record_form.php" method="post"
+id="delete_record_form">
+<input type="hidden" name="record_id"
+value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
-value="<?php echo $task['categoryID']; ?>">
+value="<?php echo $record['categoryID']; ?>">
 <input type="submit" value="Edit">
 </form></td>
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_task_form.php">Add Task</a></p>
+<p><a href="add_record_form.php">Add Record</a></p>
 <p><a href="category_list.php">Manage Categories</a></p>
 </section>
 <?php
