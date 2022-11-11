@@ -9,7 +9,7 @@ $need = filter_input(INPUT_POST, 'need');
 $location = filter_input(INPUT_POST, 'location');
 
 // Validate inputs
-if ($category_id == null || $category_id == false || $name == null || $description == null || $date == null || $location == null) {
+if ($category_id == null || $category_id == false || $name == null || $date == null) {
     $error = "Invalid product data. Check all fields and try again.";
     include('error.php');
     exit();
