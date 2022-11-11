@@ -75,7 +75,7 @@ include('includes/header.php');
 </tr>
 <?php foreach ($tasks as $task) : ?>
 <tr>
-<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+<td><img src="image_uploads/<?php echo $task['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $task['name']; ?></td>
 <td><?php echo $task['description']; ?></td>
 <td><?php echo $task['date']; ?></td>
