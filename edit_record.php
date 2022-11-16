@@ -55,7 +55,7 @@ SET categoryID = :category_id,
 name = :name,
 description = :description,
 date = :date,
-need = :need,
+urgency = :urgency,
 location = :location,
 image = :image
 WHERE recordID = :record_id';
@@ -66,7 +66,6 @@ $statement->bindValue(':description', $description);
 $statement->bindValue(':date', $date);
 $statement->bindValue(':urgency', $urgency);
 $statement->bindValue(':location', $location);
-$statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();
 $statement->closeCursor();

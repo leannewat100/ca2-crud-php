@@ -45,8 +45,17 @@ include('includes/header.php');
 
             <label>Urgency:</label>
             <input type="radio" name="urgency"
-                   value="<?php echo $records['urgency']; ?>">
+            <?php if ($records['urgency']=="Low") echo "checked";?>
+            value="Low"><label>Low</label>
+            <input type="radio" name="urgency"
+            <?php if ($records['urgency']=="Medium") echo "checked";?>
+            value="Medium"><label>Medium</label>
+            <input type="radio" name="urgency"
+            <?php if ($records['urgency']=="High") echo "checked";?>
+            value="High"><label>High</label>
+            
             <br>
+
 
             <label>Location:</label>
             <input type="input" name="location"
