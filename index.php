@@ -76,7 +76,7 @@ include('includes/header.php');
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
-    
+
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
 <td><?php echo $record['start']; ?></td>

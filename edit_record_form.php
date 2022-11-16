@@ -51,7 +51,6 @@ include('includes/header.php');
             <label>Urgency:</label>
             <input type="radio" name="urgency"
             <?php if ($records['urgency']=="Low") echo "checked";?>
-            
             value="Low"><label>Low</label>
             <input type="radio" name="urgency"
             <?php if ($records['urgency']=="Medium") echo "checked";?>
@@ -59,7 +58,6 @@ include('includes/header.php');
             <input type="radio" name="urgency"
             <?php if ($records['urgency']=="High") echo "checked";?>
             value="High"><label>High</label>
-            
             <br>
 
 
