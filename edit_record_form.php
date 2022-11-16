@@ -43,6 +43,11 @@ include('includes/header.php');
                    value="<?php echo $records['date']; ?>">
             <br>
 
+            <label>Urgency:</label>
+            <input type="radio" name="urgency"
+                   value="<?php echo $records['urgency']; ?>">
+            <br>
+
             <label>Need:</label>
             <input type="input" name="need"
                    value="<?php echo $records['need']; ?>">

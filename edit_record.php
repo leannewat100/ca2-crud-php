@@ -64,6 +64,7 @@ $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':name', $name);
 $statement->bindValue(':description', $description);
 $statement->bindValue(':date', $date);
+$statement->bindValue(':urgency', $urgency);
 $statement->bindValue(':need', $need);
 $statement->bindValue(':location', $location);
 $statement->bindValue(':image', $image);
