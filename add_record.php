@@ -5,6 +5,7 @@ $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $description = filter_input(INPUT_POST, 'description');
 $date = filter_input(INPUT_POST, 'date');
+$urgency = filter_input(INPUT_POST, 'urgency');
 $need = filter_input(INPUT_POST, 'need');
 $location = filter_input(INPUT_POST, 'location');
 
@@ -66,9 +67,9 @@ if ($category_id == null || $category_id == false || $name == null || $date == n
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, description, date, urgency, need, location, image)
+                 (categoryID, name, description, date, urgency, need, location)
               VALUES
-                 (:category_id, :name, :description, :date, :urgency, :need, :location, :image)";
+                 (:category_id, :name, :description, :date, :urgency, :need, :location)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
@@ -77,7 +78,7 @@ if ($category_id == null || $category_id == false || $name == null || $date == n
     $statement->bindValue(':urgency', $urgency);
     $statement->bindValue(':need', $need);
     $statement->bindValue(':location', $location);
-    $statement->bindValue(':image', $image);
+  //  $statement->bindValue(':image', $image);
     $statement->execute();
     $statement->closeCursor();
 
