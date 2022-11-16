@@ -32,9 +32,7 @@ include('includes/header.php');
             
             <label>Desciption:</label>
             <textarea  name="description" rows="4" cols="50">
-
             </textarea>
-            
             <br>
 
             <label>Completion Date:</label>
