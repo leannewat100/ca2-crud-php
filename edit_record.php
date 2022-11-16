@@ -16,7 +16,7 @@ $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
 } else {
 
-/**************************** Image upload ****************************/
+/**************************** Image upload 
 
 $imgFile = $_FILES['image']['name'];
 $tmp_dir = $_FILES['image']['tmp_name'];
@@ -45,7 +45,7 @@ $errMSG = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
 $image = $original_image; // old image from database
 }
 
-/************************** End Image upload **************************/
+ End Image upload **************************/
 
 // If valid, update the record in the database
 require_once('database.php');

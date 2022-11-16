@@ -39,7 +39,7 @@ include('includes/header.php');
             <br>
 
             <label>Date:</label>
-            <input type="input" name="date"
+            <input type="date" name="date"
                    value="<?php echo $records['date']; ?>">
             <br>
 
