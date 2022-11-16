@@ -26,16 +26,19 @@ include('includes/header.php');
             <?php endforeach; ?>
             </select>
             <br>
-            <label>Name:</label>
+            <label>Task name:</label>
             <input type="input" name="name">
             <br>
             
             <label>Desciption:</label>
-            <input type="input" name="description">
+            <textarea  name="description" rows="4" cols="50">
+
+            </textarea>
+            
             <br>
 
-            <label>Date:</label>
-            <input type="input" name="date">
+            <label>Completion Date:</label>
+            <input type="date" name="date">
             <br>
 
             <label>Need:</label>
@@ -46,9 +49,9 @@ include('includes/header.php');
             <input type="input" name="location">
             <br> 
             
-            <label>Image:</label>
+         <!--   <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
-            <br>
+            <br>  -->
             
             <label>&nbsp;</label>
             <input type="submit" value="Add Record">

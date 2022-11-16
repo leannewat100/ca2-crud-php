@@ -64,7 +64,7 @@ include('includes/header.php');
 <h2><?php echo $category_name; ?></h2>
 <table>
 <tr>
-<th>Image</th>
+<!--<th>Image</th>-->
 <th>Name</th>
 <th>Description</th>
 <th>Date</th>
@@ -75,7 +75,7 @@ include('includes/header.php');
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
-<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
+<!--<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>-->
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
 <td><?php echo $record['date']; ?></td>

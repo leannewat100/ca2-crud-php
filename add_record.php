@@ -15,7 +15,8 @@ if ($category_id == null || $category_id == false || $name == null || $date == n
     exit();
 } else {
 
-    /**************************** Image upload ****************************/
+
+    /**************************** Image upload 
 
     error_reporting(~E_NOTICE); 
 
@@ -59,7 +60,7 @@ if ($category_id == null || $category_id == false || $name == null || $date == n
         }
     }
 
-    /************************** End Image upload **************************/
+     End Image upload **************************/
     
     require_once('database.php');
 
