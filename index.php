@@ -79,6 +79,7 @@ include('includes/header.php');
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
 <td><?php echo $record['date']; ?></td>
+<td><?php echo $record['urgency']; ?></td>
 <td><?php echo $record['need']; ?></td>
 <td><?php echo $record['location']; ?></td>
 <td><form action="delete_record.php" method="post"

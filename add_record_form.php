@@ -41,6 +41,18 @@ include('includes/header.php');
             <input type="date" name="date">
             <br>
 
+            <label>Urgency:</label>
+            <input type="radio" name="gender"
+            <?php if (isset($gender) && $gender=="female") echo "checked";?>
+            value="female"><label>Low</label>
+            <input type="radio" name="gender"
+            <?php if (isset($gender) && $gender=="male") echo "checked";?>
+            value="male"><label>Medium</label>
+            <input type="radio" name="gender"
+            <?php if (isset($gender) && $gender=="other") echo "checked";?>
+            value="other"><label>High</label>
+            <br>
+
             <label>Need:</label>
             <input type="input" name="need">
             <br>
