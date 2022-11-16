@@ -10,7 +10,7 @@ $urgency = filter_input(INPUT_POST, 'urgency');
 $location = filter_input(INPUT_POST, 'location');
 
 // Validate inputs
-if ($category_id == null || $category_id == false || $name == null || $description == null || $start == null || $date == null) {
+if ($category_id == null || $category_id == false || $name == null || $description == null || $start == null || $date == null || $urgency == null) {
     $error = "Invalid product data. Check all fields and try again.";
     include('error.php');
     exit();
@@ -24,7 +24,7 @@ if ($category_id == null || $category_id == false || $name == null || $descripti
     $query = "INSERT INTO records
                  (categoryID, name, description, start, date, urgency, location)
               VALUES
-                 (:category_id, :name, :description, start, :date, :urgency, :location)";
+                 (:category_id, :name, :description, :start, :date, :urgency, :location)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);

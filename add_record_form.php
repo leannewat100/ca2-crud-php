@@ -34,6 +34,7 @@ include('includes/header.php');
             <textarea  name="description" rows="4" cols="50">
             </textarea>
             <br>
+            <br>
 
             <label>Start Date:</label>
             <input type="date" name="start">

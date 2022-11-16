@@ -37,6 +37,7 @@ include('includes/header.php');
             <input type="input" name="description"
                    value="<?php echo $records['description']; ?>">
             <br>
+            <br>
 
             <label>Start Date:</label>
             <input type="date" name="start"
