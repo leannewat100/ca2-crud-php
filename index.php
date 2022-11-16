@@ -68,7 +68,6 @@ include('includes/header.php');
 <th>Name</th>
 <th>Description</th>
 <th>Date</th>
-<th>Need</th>
 <th>Urgency</th>
 <th>Location</th>
 <th>Delete</th>

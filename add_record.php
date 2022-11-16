@@ -6,7 +6,6 @@ $name = filter_input(INPUT_POST, 'name');
 $description = filter_input(INPUT_POST, 'description');
 $date = filter_input(INPUT_POST, 'date');
 $urgency = filter_input(INPUT_POST, 'urgency');
-$need = filter_input(INPUT_POST, 'need');
 $location = filter_input(INPUT_POST, 'location');
 
 // Validate inputs
@@ -76,7 +75,6 @@ if ($category_id == null || $category_id == false || $name == null || $date == n
     $statement->bindValue(':description', $description);
     $statement->bindValue(':date', $date);
     $statement->bindValue(':urgency', $urgency);
-    $statement->bindValue(':need', $need);
     $statement->bindValue(':location', $location);
   //  $statement->bindValue(':image', $image);
     $statement->execute();

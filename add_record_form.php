@@ -40,19 +40,15 @@ include('includes/header.php');
             <br>
 
             <label>Urgency:</label>
-            <input type="radio" name="gender"
-            <?php if (isset($gender) && $gender=="female") echo "checked";?>
-            value="female"><label>Low</label>
-            <input type="radio" name="gender"
-            <?php if (isset($gender) && $gender=="male") echo "checked";?>
-            value="male"><label>Medium</label>
-            <input type="radio" name="gender"
-            <?php if (isset($gender) && $gender=="other") echo "checked";?>
-            value="other"><label>High</label>
-            <br>
-
-            <label>Need:</label>
-            <input type="input" name="need">
+            <input type="radio" name="urgency"
+            <?php if (isset($urgency) && $urgency=="Low") echo "checked";?>
+            value="Low"><label>Low</label>
+            <input type="radio" name="urgency"
+            <?php if (isset($urgency) && $urgency=="Medium") echo "checked";?>
+            value="Medium"><label>Medium</label>
+            <input type="radio" name="urgency"
+            <?php if (isset($urgency) && $urgency=="High") echo "checked";?>
+            value="High"><label>High</label>
             <br>
             
             <label>Location:</label>

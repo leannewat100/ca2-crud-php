@@ -48,11 +48,6 @@ include('includes/header.php');
                    value="<?php echo $records['urgency']; ?>">
             <br>
 
-            <label>Need:</label>
-            <input type="input" name="need"
-                   value="<?php echo $records['need']; ?>">
-            <br>
-
             <label>Location:</label>
             <input type="input" name="location"
                    value="<?php echo $records['location']; ?>">
