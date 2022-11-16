@@ -58,10 +58,7 @@ include('includes/header.php');
             <label>Location:</label>
             <input type="input" name="location">
             <br> 
-            
-         <!--   <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
-            <br>  -->
+
             
             <label>&nbsp;</label>
             <input type="submit" value="Add Record">

@@ -68,12 +68,6 @@ include('includes/header.php');
                    value="<?php echo $records['location']; ?>">
             <br>
 
-            <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
-            <br>            
-            <?php if ($records['image'] != "") { ?>
-            <p><img src="image_uploads/<?php echo $records['image']; ?>" height="150" /></p>
-            <?php } ?>
             
             <label>&nbsp;</label>
             <input type="submit" value="Save Changes">

@@ -59,7 +59,6 @@ start = :start,
 date = :date,
 urgency = :urgency,
 location = :location,
-image = :image
 WHERE recordID = :record_id';
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);

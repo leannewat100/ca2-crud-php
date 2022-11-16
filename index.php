@@ -76,7 +76,7 @@ include('includes/header.php');
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
-<!--<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>-->
+    
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
 <td><?php echo $record['start']; ?></td>
