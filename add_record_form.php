@@ -35,6 +35,10 @@ include('includes/header.php');
             </textarea>
             <br>
 
+            <label>Start Date:</label>
+            <input type="date" name="start">
+            <br>
+
             <label>Completion Date:</label>
             <input type="date" name="date">
             <br>

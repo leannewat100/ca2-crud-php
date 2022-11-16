@@ -67,7 +67,8 @@ include('includes/header.php');
 <!--<th>Image</th>-->
 <th>Name</th>
 <th>Description</th>
-<th>Date</th>
+<th>Start Date</th>
+<th>Completion Date</th>
 <th>Urgency</th>
 <th>Location</th>
 <th>Delete</th>
@@ -78,6 +79,7 @@ include('includes/header.php');
 <!--<td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>-->
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['description']; ?></td>
+<td><?php echo $record['start']; ?></td>
 <td><?php echo $record['date']; ?></td>
 <td><?php echo $record['urgency']; ?></td>
 <td><?php echo $record['location']; ?></td>

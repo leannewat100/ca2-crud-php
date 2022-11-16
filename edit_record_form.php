@@ -38,7 +38,12 @@ include('includes/header.php');
                    value="<?php echo $records['description']; ?>">
             <br>
 
-            <label>Date:</label>
+            <label>Start Date:</label>
+            <input type="date" name="start"
+                   value="<?php echo $records['start']; ?>">
+            <br>
+
+            <label>Completion Date:</label>
             <input type="date" name="date"
                    value="<?php echo $records['date']; ?>">
             <br>
@@ -46,6 +51,7 @@ include('includes/header.php');
             <label>Urgency:</label>
             <input type="radio" name="urgency"
             <?php if ($records['urgency']=="Low") echo "checked";?>
+            
             value="Low"><label>Low</label>
             <input type="radio" name="urgency"
             <?php if ($records['urgency']=="Medium") echo "checked";?>
