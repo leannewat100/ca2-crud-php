@@ -19,7 +19,7 @@ include('includes/header.php');
         <h1>Edit Task</h1>
         <form action="edit_record.php" method="post" enctype="multipart/form-data"
               id="add_record_form">
-            <input type="hidden" name="original_image" value="<?php echo $records['image']; ?>" />
+
             <input type="hidden" name="record_id"
                    value="<?php echo $records['recordID']; ?>">
 
@@ -39,27 +39,14 @@ include('includes/header.php');
             <br>
             <br>
 
-            <label>Start Date:</label>
-            <input type="date" name="start"
-                   value="<?php echo $records['start']; ?>">
-            <br>
+       
 
             <label>Completion Date:</label>
             <input type="date" name="date"
                    value="<?php echo $records['date']; ?>">
             <br>
 
-            <label>Urgency:</label>
-            <input type="radio" name="urgency"
-            <?php if ($records['urgency']=="Low") echo "checked";?>
-            value="Low"><label>Low</label>
-            <input type="radio" name="urgency"
-            <?php if ($records['urgency']=="Medium") echo "checked";?>
-            value="Medium"><label>Medium</label>
-            <input type="radio" name="urgency"
-            <?php if ($records['urgency']=="High") echo "checked";?>
-            value="High"><label>High</label>
-            <br>
+
 
 
             <label>Location:</label>
@@ -73,6 +60,8 @@ include('includes/header.php');
             <br>
         </form>
         <p><a href="index.php">View Homepage</a></p>
+
+
     <?php
 include('includes/footer.php');
 ?>
